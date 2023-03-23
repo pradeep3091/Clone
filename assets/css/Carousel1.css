@@ -1,0 +1,129 @@
+﻿.CarouselContainer {
+    padding-top: 300px;
+    position: relative;
+    margin-bottom: -5px;
+    box-shadow: 0 0 92px 0 rgb(0 0 0 / 36%);
+}
+
+.CarouselImg {
+    border-top: 10px solid #CF4B08;
+}
+
+    .CarouselImg img {
+        width: 100%;
+    }
+
+.CarouselText {
+    color: white;
+    word-spacing: 5px;
+    margin: auto;
+    position: absolute;
+    top: 94%;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    font-size: 25px;
+    word-spacing: 10px;
+    letter-spacing: 3px;
+}
+
+    .CarouselText p {
+        margin: auto;
+    }
+
+.SlideContainer {
+    width: 60%;
+    height: 50%;
+    background: white;
+    position: absolute;
+    top: 20%;
+    border: solid;
+    left: 20%;
+    box-shadow: aliceblue;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.Slidecontect {
+    text-align: center;
+    padding: 42px;
+}
+
+    .Slidecontect h1 {
+        font-size: 38px;
+        color: #CF4B08;
+        font-weight: 400;
+        margin-bottom: 31px;
+    }
+
+    .Slidecontect p {
+        font-size: 1.125rem;
+        color: #393839;
+        font-weight: 400;
+        line-height: 1.5;
+    }
+
+    .Slidecontect button {
+        background: #CF4B08;
+        padding: 20px;
+        border-radius: 31px;
+        font-size: 1.125rem;
+        font-weight: 500;
+        line-height: 1.28;
+        letter-spacing: 0.64px;
+        text-align: center;
+        display: inline-block;
+        padding: 15px 50px;
+        border: none;
+        margin-top: 30px;
+    }
+
+        .Slidecontect button a {
+            text-decoration: none;
+            color: white;
+            border: none;
+        }
+
+.SlideImg img {
+    border-radius: 50%;
+    margin-top: 50px;
+    width: 25%;
+}
+
+.Slidecontect h3 {
+    font-weight: bold;
+    letter-spacing: normal;
+    text-align: center;
+    color: #fff;
+    border-bottom: 2px solid #fff;
+    width: 25%;
+    margin: auto;
+    font-size: 1.68rem;
+    line-height: 1.2;
+}
+
+.PreviousBtn {
+    position: absolute;
+    background-color: #CF4B08;
+    padding: 10px 20px;
+    border-radius: 50%;
+    left: -35px;
+    top: 190px;
+    border: none;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}
+
+.NextBtn {
+    position: absolute;
+    background-color: #CF4B08;
+    padding: 10px 20px;
+    border-radius: 50%;
+    right: -45px;
+    top: 190px;
+    border: none;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+}

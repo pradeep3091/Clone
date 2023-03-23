@@ -1,0 +1,336 @@
+﻿* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.Hero_container {
+    position: relative;
+}
+
+.content {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.4;
+}
+
+.img_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.title {
+    position: absolute;
+    margin: 0px;
+    width: 500px;
+    top: 200px;
+    left: 40px;
+    color: black;
+}
+
+    .title h1 {
+        font-size: 50px;
+        color: white;
+    }
+
+.Main_card {
+    display: flex;
+}
+
+.Card1 {
+    width: 50%;
+    margin: -4px;
+}
+
+.Card2 {
+    width: 50%;
+}
+
+.Card1 img {
+    width: 100%;
+}
+
+.Card2 {
+    background-color: rgb(212,235,240);
+    padding: 124px;
+}
+
+    .Card2 h1 {
+        margin-bottom: 25px;
+    }
+
+.Nav1_Header ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+    .Nav1_Header ul li {
+        list-style: none;
+        padding: 15px;
+    }
+
+        .Nav1_Header ul li a {
+            text-decoration: none;
+            color: #393839;
+        }
+
+.Nav1_Header img {
+    margin-left: 30px;
+}
+
+.Nav2_Header {
+    display: flex;
+    padding: 30px;
+    background-color: gainsboro;
+}
+
+    .Nav2_Header ul img {
+        width: 35px;
+        height: 35px;
+        margin-bottom: 20px;
+    }
+
+    .Nav2_Header ul {
+        display: flex;
+        /*  border: solid;*/
+        padding: 10px;
+    }
+
+        .Nav2_Header ul li {
+            list-style: none;
+            /*  border: solid;*/
+            justify-content: space-around;
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+        }
+
+            .Nav2_Header ul li a {
+                font-weight: bold;
+                letter-spacing: 1.4px;
+                align-content: center;
+                color: #393839;
+                text-decoration: none
+            }
+
+.Hearder_logo2 {
+
+    padding: 22px;
+    margin-top: 40px;
+    margin-left: 8px;
+}
+
+    .Hearder_logo2 li {
+        list-style: none;
+    }
+
+.Nav3_header {
+    background-color: #CF4B08;
+}
+
+    .Nav3_header ul {
+        display: flex;
+        justify-content: center;
+    }
+
+        .Nav3_header ul li {
+            list-style: none;
+            padding: 16px 40px;
+        }
+
+            .Nav3_header ul li a {
+                text-decoration: none;
+                color: white;
+                font-size: 15px;
+                text-transform: uppercase;
+            }
+
+.Bullet_Heading {
+    padding: 60px;
+}
+
+    .Bullet_Heading h1 {
+        margin-bottom: 40px;
+        font-size: 45px;
+        font-weight: 400;
+    }
+
+    .Bullet_Heading p {
+        font-size: 20px;
+    }
+
+.List_continer {
+    display: flex;
+    justify-content: space-around;
+    margin: 0px 71px;
+}
+
+    .List_continer li::marker {
+        font-size: 35px;
+    }
+
+.List1 li {
+    margin: 40px;
+}
+
+    .List1 li a {
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+.List2 li {
+    margin: 40px;
+}
+
+    .List2 li a {
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+.List3 li {
+    margin: 40px;
+}
+
+    .List3 li a {
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+.List4 li {
+    margin: 40px;
+}
+
+    .List4 li a {
+        color: black;
+        font-size: 25px;
+        font-weight: 500;
+        text-decoration: none;
+    }
+
+.BannerSubContainer {
+    width: 50%;
+    margin: auto;
+}
+
+.BannerContainer {
+    background: #EDEDED;
+    padding: 30px;
+}
+
+.BannerSubContainer h1 {
+    text-align: center;
+    font-size: 39px;
+    color: #CF4B08;
+    font-weight: 700;
+    margin-bottom: 36px;
+    margin-top: 30px;
+}
+
+.BannerContent p {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #CF4B08;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.BannerBtn {
+    width: 100%
+}
+
+    .BannerBtn button a {
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+    }
+
+    .BannerBtn button {
+        border-radius: 50px;
+        margin: 26px 185px;
+        background-color: #CF4B08;
+        border: none;
+        text-align: center;
+        padding: 12px;
+        width: 46%;
+    }
+
+.FooterContainer {
+    margin-top: 2px;
+    background-color: #393839;
+    Text-align: center;
+    padding: 30px;
+}
+
+.FooterLogo img {
+    width: 30%;
+}
+
+.logo {
+    margin: auto;
+    text-align: center;
+    margin-top: 50px;
+    width: 20%;
+}
+
+    .logo img {
+        height: 50px;
+        width: 50px;
+    }
+
+.FooterlistContainer {
+    background-color: #393839;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    line-height: 2;
+}
+
+    .FooterlistContainer li {
+        list-style: none;
+        padding: 11px;
+    }
+
+        .FooterlistContainer li a {
+            color: white;
+            text-decoration: none;
+            font-size: 25px;
+            font-size: 20px;
+        }
+
+.Footerlist2 {
+    border: 1px solid white;
+}
+
+.logo ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.Footerlist3 ul {
+    border-bottom: 1px solid white;
+}
+
+.Borderbottom {
+    border-bottom: 1px solid white;
+}
+
+.CopyRinghtText {
+    padding: 36px;
+    background-color: #393839;
+    color: white;
+}
+
+.CarouselContainer {
+    padding-top: 300px;
+}
