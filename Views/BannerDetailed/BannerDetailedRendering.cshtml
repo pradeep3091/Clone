@@ -1,0 +1,23 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+
+<div class="BannerContainer">
+
+    <div class="BannerSubContainer">
+
+        <div class="BannerTitle">
+            <h1> @Html.Sitecore().Field("Title", Model.Item)</h1>
+        </div>
+
+        <div class="BannerContent">
+            <p> @Html.Sitecore().Field("Content", Model.Item)</p>
+        </div>
+
+        <div class="BannerBtn">
+            <button>@Html.Sitecore().Field("CTA", Model.Item) </button>
+        </div>
+    </div>
+
+</div>
+
+

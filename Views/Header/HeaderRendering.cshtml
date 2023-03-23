@@ -1,0 +1,53 @@
+﻿@using Sitecore.Mvc
+@model Assessmentsitecore.Models.HeaderModel
+
+<div class="Nav_Header">
+
+    <div class="Nav1_Header">
+        <ul>
+            <li><img src="@Model.logo1"></li>
+            @if (Model.navigation1 != null)
+            {
+                foreach (var childItem in Model.navigation1)
+                {
+                    <li> <a href="@childItem.URL"> @childItem.CTA </a> </li>
+                }
+            }
+        </ul>
+    </div>
+
+    <div class="Nav2_Header">
+
+        <div class="Hearder_logo2">
+            <li><img src="@Model.logo2"></li>
+        </div>
+       
+        <ul>
+            @if (Model.navigation2 != null)
+            {
+                foreach (var childItem in Model.navigation2)
+                {
+                    <li><img src="@childItem.Img_src"><br><span><a href="@childItem.URL"> @childItem.CTA </a></span></li>
+                }
+            }
+        </ul>
+    </div>
+
+    <div class="Nav3_header">
+      <ul>
+               
+          @if (Model.navigation3 != null)
+           {
+                  
+              foreach (var childitem in Model.navigation3)
+               {
+                       
+                  <li> <a href="@childitem.URL"> @childitem.CTA </a> </li>
+                   
+                }
+           }        
+      </ul>
+        </div>
+
+
+</div>

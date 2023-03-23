@@ -1,0 +1,88 @@
+﻿@using Sitecore.Mvc
+@model Assessmentsitecore.Models.FooterModel
+
+<div class="FooterContainer">
+    <div class="FooterLogo">
+        <ul>
+            <li><img src="@Model.logo"></li>
+
+        </ul>
+    </div>
+</div>
+
+<div class="FooterlistContainer">
+
+    <div class="Footerlist1">
+        <ul class="Borderbottom">
+            @if (Model.ls1 != null)
+            {
+                foreach (var childItem in Model.ls1)
+                {
+                    <li><a href="@childItem.URL"> @childItem.CTA </a></li>
+                }
+            }
+
+        </ul>
+        <div class="logo">
+            <ul >
+                @if (Model.ls2 != null)
+                {
+                    foreach (var childItem in Model.ls2)
+                    {
+                        <li><img src="@childItem.Img_src"></li>
+                    }
+                }
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="Footerlist2">
+        <ul>
+            @if (Model.ls3 != null)
+            {
+                foreach (var childItem in Model.ls3)
+                {
+                    <li><a href="@childItem.URL"> @childItem.CTA </a></li>
+                }
+            }
+
+        </ul>
+    </div>
+
+    <div class="Footerlist3">
+        <ul>
+            @if (Model.ls4 != null)
+            {
+                foreach (var childItem in Model.ls4)
+                {
+                    <li><a href="@childItem.URL"> @childItem.CTA </a></li>
+                }
+            }
+
+        </ul>
+
+
+        <ul>
+            @if (Model.ls5 != null)
+            {
+                foreach (var childItem in Model.ls5)
+                {
+                    <li><a href="@childItem.URL"> @childItem.CTA </a></li>
+                }
+            }
+
+        </ul>
+
+
+
+    </div>
+    
+</div>
+
+<div class="CopyRinghtText">
+    <p>@Model.CopyRightText</p>
+</div>
+
+
+

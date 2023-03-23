@@ -1,0 +1,44 @@
+﻿@using Sitecore.Mvc
+@model Assessmentsitecore.Models.CarouselModel
+
+<div class="CarouselContainer">
+
+    <div class="CarouselImg">
+
+        <img src="@Model.Image">
+
+    </div>
+
+    <div class="CarouselText">
+
+        <p>@Model.AboutPatient</p>
+
+    </div>
+
+    <div class="SlideContainer">
+        <button class="PreviousBtn" onclick="controller(-1)"> < </button>
+        <button class="NextBtn" onclick="controller(1)"> > </button>
+
+
+        @if (Model.S1 != null)
+        {
+            foreach (var childItem in Model.S1)
+            {<div class=Slidecontect>
+
+                    <h1> @childItem.Title</h1>
+                    <p> @childItem.SubTitle</p>
+                    <button><a href="@childItem.URL"> @childItem.CTA </a></button>
+                    <div class="SlideImg">
+                        <img src="@childItem.Img_src">
+                    </div>
+
+                    <h3> @childItem.Name</h3>
+
+                </div>
+
+            }
+        }
+
+    </div>
+
+</div>

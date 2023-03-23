@@ -1,0 +1,21 @@
+﻿@using Sitecore.Mvc
+@model Sitecore.Mvc.Presentation.RenderingModel
+   
+<div class="Main_card">
+
+<div class="Card1">
+
+@Html.Sitecore().Field("Image", Model.Item)
+
+</div> 
+
+<div class="Card2">
+
+  <h1> @Html.Sitecore().Field("Heading", Model.Item)</h1>
+  <p>@Html.Sitecore().Field("SubHeading", Model.Item)</p>
+
+</div>
+
+
+
+</div>

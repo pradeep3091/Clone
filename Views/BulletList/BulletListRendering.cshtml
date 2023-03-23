@@ -1,0 +1,62 @@
+﻿@using Sitecore.Mvc
+@model Assessmentsitecore.Models.BulletListModel
+
+
+<div class="Bullet_Heading">
+
+    <h1>@Model.Titile</h1>
+    <p>@Model.Content</p>
+
+</div>
+
+<div class="List_continer">
+
+    <div class="List1">
+        <ul>
+            @if (Model.lsob1 != null)
+            {
+                foreach (var childitem in Model.lsob1)
+                {
+                    <li> <a href="@childitem.URL"> @childitem.CTA </a> </li>
+                }
+            }
+        </ul>
+    </div>
+
+    <div class="List2">
+        <ul>
+            @if (Model.lsob2 != null)
+            {
+                foreach (var childitem in Model.lsob2)
+                {
+                    <li> <a href="@childitem.URL"> @childitem.CTA </a> </li>
+                }
+            }
+        </ul>
+    </div>
+  
+    <div class="List3">
+        <ul>
+            @if (Model.lsob3 != null)
+            {
+                foreach (var childitem in Model.lsob3)
+                {
+                    <li> <a href="@childitem.URL"> @childitem.CTA </a> </li>
+                }
+            }
+        </ul>
+    </div>
+  
+    <div class="List4">
+        <ul>
+            @if (Model.lsob4 != null)
+            {
+                foreach (var childitem in Model.lsob4)
+                {
+                    <li> <a href="@childitem.URL"> @childitem.CTA </a> </li>
+                }
+            }
+        </ul>
+    </div>
+
+</div>
